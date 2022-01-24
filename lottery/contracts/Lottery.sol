@@ -10,7 +10,7 @@ pragma solidity ^0.8.11;
     }
 
     function enter() public payable {
-        require(msg.value >= 1 ether);
+        require(msg.value >= .01 ether);
         players.push(msg.sender);
     }
 
